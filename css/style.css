@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.cell {
+  flex: 1;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.cell:last-child {
+  border-right: none;
+}
+
+.cell {
+  word-break: break-word;
+}
+
+.row:nth-child(even) {
+  background-color: #f9f9f9;
+}

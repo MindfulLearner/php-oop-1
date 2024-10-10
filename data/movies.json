@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Star Wars",
+        "genre": [
+            "FanFict"
+        ],
+        "dateRelease": "12-01-2001",
+        "description": "Guerre spaziali e spade laser"
+    },
+    {
+        "title": "Annabelle",
+        "genre": [
+            "Horror",
+            "Commedia"
+        ],
+        "dateRelease": "12-05-2021",
+        "description": "FIlm che fa tanto paura"
+    }
+]

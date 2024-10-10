@@ -2,8 +2,11 @@ FROM php:8.1-apache
 
 COPY . /var/www/html/
 
-RUN chown -R www-data:www-data /var/www/html && \
+RUN chown -R www-data:www-data /var/www/html/data && \
+    chmod -R 755 /var/www/html/data && \
+    chown -R www-data:www-data /var/www/html && \
     chmod -R 755 /var/www/html && \
+    # configurazione di Apache
     echo '<Directory /var/www/html/>\n\
     Options Indexes FollowSymLinks\n\
     AllowOverride All\n\
@@ -13,5 +16,4 @@ RUN chown -R www-data:www-data /var/www/html && \
     a2enmod rewrite
 
 EXPOSE 80
-
 
